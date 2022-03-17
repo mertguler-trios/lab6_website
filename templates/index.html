@@ -1,0 +1,34 @@
+<!-- IMPORT TEMPLATE FROM base.html -->
+{% extends 'base.html' %}
+
+<!-- HEAD SECTION FOR THE HTML DOCUMENT -->
+{%block head %}
+{% endblock %}
+
+<!-- BODY SECTION FOR THE HTML DOCUMENT -->
+{%block body %}
+
+<div class="main">
+    <div class="next-page-button">
+        <a href="/rent" class="page-arrows" title="next-page"><em class='fas fa-arrow-right'></em></a>
+        <p class="page-button-name">Rent</p>
+    </div>
+
+    <div class="previous-page-button">
+    </div>
+
+    <div id="home-page" class="content">
+
+        <div class="home-page-image">
+            <img src="/static/images/home.png" alt="An image of a rental car.">
+        </div>
+
+        <div class="motto">
+            <h1>TriOS Auto</h1>
+            <h2>Best rent a car corporate in town.</h2>
+        </div>
+
+    </div>
+</div>
+
+{% endblock %}

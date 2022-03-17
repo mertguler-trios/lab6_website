@@ -1,0 +1,847 @@
+@import url("https://fonts.googleapis.com/css?family=Marvel&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Mulish&display=swap");
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+/************************** GENERAL *****************************/
+
+body {
+  background-color: #222831;
+  margin: 0;
+  min-width: 375px;
+  padding: 0;
+  min-height: 100vh;
+  min-height: -webkit-fill-available;
+}
+
+html {
+  height: -webkit-fill-available;
+}
+
+a {
+  text-decoration: none;
+}
+
+.top-bar {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/*************************** LOGO AND TITLE ************************/
+
+/* .header {
+    display: flex;
+    justify-content: center;
+} */
+
+.header {
+  margin-left: 120px;
+  display: flex;
+  align-items: center;
+}
+
+.header a {
+  font-size: 48px;
+  font-family: Marvel;
+  margin-left: 20px;
+  color: #eeeeee;
+}
+
+.header a:visited {
+  color: #eeeeee;
+}
+
+.header img {
+  margin: 0 auto;
+  width: 60px;
+}
+
+/*************************** NAVIGATION ***************************/
+
+.menu {
+  height: 80px;
+  float: right;
+  margin-right: 100px;
+  display: grid;
+  grid-template-areas: "home rent about contact";
+  grid-template-columns: auto auto auto auto;
+  gap: 0;
+}
+
+.nav-button {
+  background-color: #00adb5;
+  padding: 25px 20px;
+  text-align: center;
+  font-family: Mulish;
+  color: #eeeeee;
+  font-size: 18px;
+}
+
+.nav-button:hover {
+  background-color: white;
+  color: #222831;
+}
+
+/*************************** MAIN ***************************/
+
+.content {
+  min-height: calc(100vh - 130px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*************************** NEXT - PREVIOUS BUTTONS ***************************/
+
+.page-arrows {
+  border-radius: 50%;
+  background-color: #393e46;
+  font-size: 60px;
+  padding: 30px;
+  text-decoration: none;
+  color: #eeeeee;
+}
+
+.page-arrows:hover {
+  background-color: #eeeeee;
+  color: #222831;
+}
+
+.next-page-button {
+  float: right;
+  margin: 0 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: calc(100vh - 130px);
+  width: 112.5px;
+}
+
+.previous-page-button {
+  float: left;
+  margin: 0 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: calc(100vh - 130px);
+  width: 112.5px;
+}
+
+.page-button-name {
+  font-size: 30px;
+  font-family: Marvel;
+  color: #eeeeee;
+  margin: 5px 0;
+}
+
+/*************************** FOOTER ***************************/
+
+.footer {
+  background-color: #c4c4c4;
+  position: relative;
+  height: 50px;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: Mulish;
+  font-size: 12px;
+  clear: both;
+}
+
+.footer .copyright-message img {
+  height: 40px;
+  margin-left: 50px;
+  margin-right: 20px;
+}
+
+.footer-credit {
+  padding-right: 20px;
+}
+
+.copyright-message {
+  display: flex;
+  align-items: center;
+}
+
+/************************ HOME PAGE STYLES ********************/
+
+.main {
+  height: calc(100vh - 130px);
+  width: 100%;
+  overflow: auto;
+}
+
+.main h1 {
+  font-family: Marvel;
+  font-size: 70px;
+  text-align: right;
+  color: #eeeeee;
+  margin: 0;
+}
+
+.main h2 {
+  font-family: Marvel;
+  font-size: 28px;
+  text-align: right;
+  color: #eeeeee;
+  margin: 0;
+}
+
+.home-page-image {
+  width: 70%;
+}
+
+.motto {
+  width: 30%;
+  margin-right: 250px;
+}
+
+/************************ RENT PAGE STYLES ********************/
+
+.car-listing {
+  border: 1px solid black;
+  width: 80%;
+  height: 650px;
+  margin: 0 20px;
+  border-radius: 40px 120px;
+  background-color: #eeeeee;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: Mulish;
+  font-size: 24px;
+}
+
+.car-listing img {
+  width: 80%;
+  height: 50%;
+  border: 3px solid #222831;
+  padding: 0;
+  margin: 65px auto 40px auto;
+  border-radius: 50px;
+}
+
+.car-listing p {
+  margin: 5px;
+  text-align: center;
+}
+
+.car-listing a {
+  width: 60%;
+  height: 50px;
+  border-radius: 25px;
+  background-color: #00adb5;
+  color: #eeeeee;
+  margin-top: 20px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.car-listing a:hover {
+  background-color: #222831;
+  color: #eeeeee;
+}
+
+.car-listing a:hover span {
+  display: none;
+}
+
+.car-listing a:hover:before {
+  content: "E-Pay";
+}
+
+#rent-page {
+  flex-wrap: nowrap;
+}
+
+/************************ ABOUT US PAGE STYLES ********************/
+
+#about-page {
+  font-family: Marvel;
+  color: #eeeeee;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#about-page h3 {
+  font-size: 32px;
+}
+
+#about-page p {
+  font-size: 20px;
+}
+
+#about-page .table-image {
+  width: 300px;
+  padding: 0 20px;
+}
+
+#about-page #mert-info td {
+  padding-left: 80px;
+}
+
+#about-page #berkay-info td {
+  padding-right: 80px;
+}
+
+hr {
+  display: none;
+}
+
+.biography {
+  grid-area: biography;
+}
+
+.history-description {
+  column-count: 2;
+  grid-area: history;
+  width: 70%;
+  margin: 0 auto;
+}
+
+.company-history h3 {
+  text-align: center;
+}
+
+.certificates {
+  grid-area: certificates;
+  text-align: center;
+  list-style-position: inside;
+}
+
+.certificates ul {
+  padding: 0px;
+  font-size: 20px;
+}
+
+.certificates ul li {
+  margin: 10px 0;
+}
+
+#about-page {
+  display: grid;
+  grid-template-areas:
+    "biography history"
+    "biography certificates";
+}
+
+/************************ CONTACT PAGE STYLES ********************/
+
+#contact-page {
+  justify-content: space-between;
+}
+
+#contact-page #form {
+  width: 500px;
+  padding: 25px;
+  margin-left: 10px;
+}
+
+#contact-page #form input {
+  width: 100%;
+  height: 50px;
+  background-color: #eeeeee;
+  margin-top: 10px;
+  border: none;
+}
+
+#contact-page #form label {
+  width: 100%;
+  color: #eeeeee;
+  font-family: Mulish;
+  font-size: 24px;
+}
+
+#contact-page #form #message {
+  width: 100%;
+  border-radius: 5px;
+  background-color: #eeeeee;
+  margin-top: 10px;
+}
+
+#contact-page #form #submit {
+  height: 50px;
+  background-color: #00adb5;
+  font-family: Mulish;
+  font-size: 24px;
+  color: #eeeeee;
+  border: none;
+}
+
+#contact-page #form #submit:hover {
+  background-color: #eeeeee;
+  color: #222831;
+}
+
+.social-media {
+  margin-right: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.social-media-icons {
+  width: 80px;
+  margin: 10px auto;
+  background-color: #eeeeee;
+  border-radius: 50%;
+  min-width: 100%;
+}
+
+.social-media-icons:hover {
+  background-color: #00adb5;
+}
+
+#youtube-video {
+  margin: auto 50px;
+}
+
+/************************ CAR BOOKING E-PAYMENT PAGE DETAILS ********************/
+
+.book-page {
+  justify-content: space-around;
+}
+
+.booking-left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.date-options {
+  color: #eeeeee;
+  font-family: Marvel;
+  font-size: 18px;
+}
+
+.car-image {
+  width: 250px;
+  margin: 0;
+  padding: 0;
+}
+
+.car-image img {
+  width: 250px;
+  border: 3px solid black;
+  border-radius: 50px;
+}
+
+.car-details li {
+  font-family: Marvel;
+  font-size: 20px;
+  color: #eeeeee;
+  padding: 5px 0;
+  list-style-type: square;
+  list-style-position: inside;
+}
+
+.car-details h3 {
+  font-family: Marvel;
+  font-size: 28px;
+  color: #eeeeee;
+  text-align: center;
+}
+
+.car-details .available {
+  color: #00adb5;
+}
+
+#bring-car {
+  width: auto;
+  vertical-align: middle;
+  margin-right: 5px;
+}
+
+#pickup-car {
+  width: auto;
+  vertical-align: middle;
+  margin-right: 5px;
+}
+
+/******** PAYMENT FORM ********/
+
+.payment-form {
+  padding: 10px 40px;
+  border-radius: 40px;
+  font-family: Marvel;
+  background: rgb(183, 187, 191);
+  background: linear-gradient(
+    45deg,
+    rgba(183, 187, 191, 0.9) 0%,
+    rgba(219, 228, 228, 1) 50%,
+    rgba(238, 238, 238, 1) 100%
+  );
+}
+
+.payment-form input {
+  width: 100%;
+  height: 20px;
+  border-radius: 5px;
+  background-color: white;
+  border: none;
+  margin: 5px 0;
+}
+
+.payment-form #check {
+  width: auto;
+  vertical-align: middle;
+  margin-right: 5px;
+}
+
+.payment-form #cvv-expiry #expiry-date {
+  width: 40%;
+}
+
+.payment-form #cvv-expiry {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.payment-form #cvv-expiry input {
+  width: 20%;
+}
+
+.payment-form #submit {
+  background-color: #00adb5;
+  height: 30px;
+  border-radius: 100px;
+  font-size: 18px;
+  color: #eeeeee;
+  font-family: Marvel;
+  font-weight: 600;
+}
+
+.payment-form #submit:hover {
+  background-color: #222831;
+  color: #eeeeee;
+}
+
+/******************** PAYMENT RECEIVED PAGE *********************/
+
+#payment-page {
+  justify-content: center;
+  flex-direction: column;
+}
+
+.payment-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 60px;
+}
+
+.payment-logo h2 {
+  font-size: 94px;
+  font-family: Marvel;
+  color: #eeeeee;
+  margin-left: 30px;
+}
+
+.payment-approved {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 100px;
+}
+
+.payment-approved img {
+  width: 80px;
+}
+
+.payment-approved h2 {
+  font-size: 36px;
+  font-family: Marvel;
+  color: #eeeeee;
+}
+
+#payment-page p {
+  color: #eeeeee;
+  font-family: Marvel;
+  font-size: 24px;
+}
+
+.close-button {
+  background-color: #00adb5;
+  border: none;
+  height: 50px;
+  font-family: Marvel;
+  font-size: 24px;
+  width: 200px;
+  color: #eeeeee;
+  margin-top: 50px;
+  border-radius: 100px;
+}
+
+.close-button:hover {
+  background-color: #eeeeee;
+  color: #222831;
+}
+
+/********************** RESPONSIVE PAGE STYLES - MEDIA QUERIES *****************/
+
+@media only screen and (max-width: 1000px) {
+
+  /**************** navigation bar on mobile *************/
+
+  .top-bar {
+    flex-direction: column;
+  }
+
+  .header {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+  }
+
+  .header img {
+    margin: 0 0 0 0;
+  }
+
+  .menu {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    background-color: #00adb5;
+  }
+
+  .top-bar {
+    height: 140px;
+  }
+
+  /**************** footer bar on mobile *************/
+
+  .footer {
+    font-size: 8px;
+  }
+
+  /**************** navigation arrows on mobile *************/
+
+  .next-page-button {
+    display: none;
+    width: 0;
+  }
+
+  .previous-page-button {
+    display: none;
+    width: 0;
+  }
+
+
+  /**************** main content on mobile *************/
+
+  .content {
+    min-height: calc(100vh - 190px);
+  }
+
+  /**************** rent page on mobile *************/
+
+  #rent-page {
+    flex-direction: column;
+  }
+
+  #rent-page .car-listing {
+    margin: 30px 0;
+  }
+
+  /**************** home page on mobile *************/
+
+  .motto {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+  }
+
+  .home-page-image {
+    width: 80%;
+  }
+
+  #home-page {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .motto {
+    width: 100%;
+  }
+
+  .main h1 {
+    font-size: 50px;
+  }
+
+  .main h2 {
+    font-size: 20px;
+  }
+
+  .main {
+    height: calc(100vh - 190px);
+  }
+
+  /**********************   booking page mobile   ********************/
+
+  .book-page {
+    flex-direction: column;
+    margin: 20px 0;
+  }
+
+  .payment-form {
+    width: 60%;
+  }
+
+  .payment-form input {
+    width: 100%;
+  }
+
+  .payment-form #cvv-expiry #expiry-date {
+    width: 100%;
+  }
+
+  .payment-form #cvv-expiry {
+    flex-direction: column;
+    align-items: normal;
+  }
+
+  .payment-form #cvv-expiry input {
+    width: 100%;
+  }
+
+
+  /**********************   about page mobile   ********************/
+
+  .vertical tr {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 10px;
+  }
+
+  .biography {
+    grid-area: biography;
+  }
+
+  .history-description {
+    column-count: 2;
+    grid-area: history;
+    width: 70%;
+    margin: 0 auto;
+  }
+
+  .company-history {
+    margin: 0 10px;
+  }
+
+  .company-history h3 {
+    text-align: center;
+  }
+
+  .certificates {
+    grid-area: certificates;
+    text-align: center;
+    list-style-position: inside;
+  }
+
+  .certificates ul {
+    padding: 0px;
+    font-size: 20px;
+  }
+
+  .certificates ul li {
+    margin: 10px 0;
+  }
+
+  #about-page {
+    display: grid;
+    grid-template-areas:
+      "biography"
+      "history"
+      "certificates";
+    max-width: 375px;
+  }
+
+  #about-page table {
+    max-width: 375px;
+  }
+
+  hr {
+    display: block;
+    width: 90%;
+    color: #eeeeee;
+  }
+
+  /********************* payment confirmation page on mobile ****************/
+
+  #payment-body .menu {
+    background-color: #222831;
+  }
+
+  #payment-body .top-bar {
+    height: 0;
+  }
+
+  #payment-body .main {
+    height: calc(100vh - 50px);
+  }
+
+  #payment-body p {
+    text-align: center;
+  }
+
+  #payment-page {
+    margin-top: 50px;
+  }
+
+  #payment-page h2 {
+    font-size: 36px;
+  }
+
+  /********************** contact page on mobile  ***********************/
+
+  #contact-page {
+    flex-direction: column;
+  }
+
+  #contact-page #form {
+    width: 80%;
+  }
+
+  #contact-page iframe {
+    width: 80%;
+  }
+
+  #contact-page .social-media {
+    flex-direction: row;
+    margin: 20px auto;
+  }
+
+  #contact-page .social-media-icons {
+    width: 40px;
+  }
+}

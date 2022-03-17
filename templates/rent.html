@@ -1,0 +1,51 @@
+<!-- IMPORT TEMPLATE FROM base.html -->
+{% extends 'base.html' %}
+
+<!-- HEAD SECTION FOR THE HTML DOCUMENT -->
+{%block head %}
+{% endblock %}
+
+<!-- BODY SECTION FOR THE HTML DOCUMENT -->
+{%block body %}
+
+
+<div class="main">
+    <div class="next-page-button">
+        <a href="/about" class="page-arrows" title="next-page"><em class='fas fa-arrow-right'></em></a>
+        <p class="page-button-name">About Us</p>
+    </div>
+
+    <div class="previous-page-button">
+        <a href="/" class="page-arrows" title="previous-page"><em class='fas fa-arrow-left'></em></a>
+        <p class="page-button-name">Home</p>
+    </div>
+
+    <div id="rent-page" class="content">
+
+        <!-- URL TO DIFFERENT BOOKING PAGES IS DEFINED HERE WITH TYPE ATTRIBUTE -->
+        <div class="car-listing">
+            <img src="/static/images/rent1.jpeg" alt="A photo of a rental car.">
+            <p>Mustang '68</p>
+            <p>120 C$ per day</p>
+            <a href="{{url_for('booking', type='1')}}"><span>Book</span></a>
+        </div>
+
+        <div class="car-listing">
+            <img src="/static/images/rent2.jpeg" alt="A photo of a rental car.">
+            <p>Mustang 2020</p>
+            <p>150 C$ per day</p>
+            <a href="{{url_for('booking', type='2')}}"><span>Book</span></a>
+        </div>
+
+        <div class="car-listing">
+            <img src="/static/images/rent3.jpeg" alt="A photo of a rental car.">
+            <p>Mustang '58</p>
+            <p>140 C$ per day</p>
+            <a href="{{url_for('booking', type='3')}}"><span>Book</span></a>
+        </div>
+
+    </div>
+</div>
+
+
+{% endblock %}

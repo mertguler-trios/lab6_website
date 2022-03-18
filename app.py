@@ -55,7 +55,8 @@ def payment():
         duration = duration.days
         start_date = start_date.date()
         end_date = end_date.date()
-        return render_template('payment.html',order_no=order_no,customer_name=customer_name,duration=duration,start_date=start_date,end_date=end_date)
+        return render_template('payment.html',order_no=order_no,customer_name=customer_name,
+                               duration=duration,start_date=start_date,end_date=end_date)
     else:
         pass
         
